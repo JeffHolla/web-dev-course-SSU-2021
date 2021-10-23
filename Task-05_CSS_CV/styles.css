@@ -1,0 +1,101 @@
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.overview-width{
+	width: 40%;
+}
+
+.contacts-width{
+	width: 30%;
+}
+
+.avatar{
+	width:350px;
+}
+
+.body-background {
+    background-color: gray;
+}
+
+.article-background {
+    background-color: rgb(211, 211, 211);
+}
+
+.line{
+	border-top: 3px solid green;
+	border-bottom: 3px solid green;
+}
+
+.article-header {
+    vertical-align: top;
+	width: 20%;
+	border-bottom: 2px dotted purple;
+	color: purple;
+}
+
+.article-text{
+	width: 80%;
+	border-bottom: 2px dotted purple;
+}
+
+
+img {
+    border: 1;
+}
+
+form{
+	display: table;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 60px;
+	
+	position: relative;
+	width: 35%;
+	text-align: center;
+	border: 1px solid rgb(233, 233, 233);
+    border-radius: 2rem;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, .1);
+	background-color: white;
+}
+
+form input, textarea {
+    width: 90%;
+    margin: 15px 0 5px 0;
+    line-height: 2rem;
+    border: 1px solid green;
+    border-radius: 25rem;
+    padding: 0 0 0 10px;
+}
+
+form input::placeholder, textarea::placeholder {
+    color: gray;
+ 	text-align: left;
+}
+
+input[type="submit"] {
+    background-color: darkgreen;
+    color: white;
+    height: 40px;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.1);
+}
+
+table{
+	/*cellspacing="0"*/
+	border-spacing: 0px;
+	border-collapse: separate;
+	width:100%;
+}
+
+td{
+	/*cellpadding ="5"*/
+	padding: 5px;
+}
