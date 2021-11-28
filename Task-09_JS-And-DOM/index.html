@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Task 9</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="Task_1_Password_Generator.js"></script>
+    <script src="Task_2_BinaryWord.js"></script>
+    <script src="Task_2_StringToTable.js"></script>
+    <script src="GeneralFunctions.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1>Password Generator</h1>
+        <form>
+			<div>Converts words to bits</div>
+			<br/>
+
+			<strong>
+			Enter password length greater than 5
+            </strong>
+			<br/>
+			<input type="number" placeholder="Enter length" id="passwordLength" min="6"/>
+            <input class="btn" type="button" value="Generate password" onclick="startPasswordGenerator();"></input>
+			<input class="btnReset" type="button" value="Reset" onclick="resetFieldById('passwordLength'); resetFieldById('generatedPassword');"></input>
+            <h3>Result:</h3>
+            <div id="generatedPassword"></div>
+        </form>
+    </div>
+
+<hr/>
+
+    <div>
+        <h1>String to table</h1>
+        <form>
+			<div>Translates the entered word into a table with a given height and width </div>
+			<div class="examples">
+Examples: 
+			<strong>
+Word = Hello World!  /  Height = 4  /  Width = 4
+Word = Nice pattern  /  Height = 4  /  Width = 3
+Word = Nice pattern  /  Height = 3  /  Width = 4
+			</strong>
+			</div>
+            <input type="text" placeholder="Enter word" id="stringWord"/>
+            <input type="number" placeholder="Enter table height" id="tableHeight" min="1"/>
+            <input type="number" placeholder="Enter table width" id="tableWidth" min="1"/>
+            <input class="btn" type="button" value="Show word in table" onclick="startStringToTable();"></input>
+            <input class="btnReset" type="button" value="Reset" 
+			onclick="
+			resetFieldById('stringWord'); 
+			resetFieldById('tableHeight'); 
+			resetFieldById('tableWidth'); 
+			resetFieldById('wordInTable');"></input>
+			<h3>Result:</h3>
+            <div>
+				<textarea id="wordInTable" readonly="true">
+				</textarea>
+			</div>
+        </form>
+    </div>
+
+<hr/>
+
+    <div>
+        <h1>Binary word</h1>
+        <form>
+			<div>Converts words to bits</div>
+			<br/>
+			<strong>
+			Enter the word
+			</strong>
+			<br/>
+            <input type="text" placeholder="Enter word" id="wordToBits"/>
+            <input class="btn" type="button" value="Translate word to bits" onclick="startWordToBits()"></input>
+            <input class="btnReset" type="button" value="Reset" onclick="resetFieldById('wordToBits'); resetFieldById('wordInBits');"></input>
+            <h3>Result:</h3>
+            <div id="wordInBits"></div>
+        </form>
+    </div>
+</body>
+
+</html>

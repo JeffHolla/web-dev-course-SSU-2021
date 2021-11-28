@@ -1,0 +1,36 @@
+#wordInTable {
+  white-space: pre;
+  border-radius: 10px 10px;
+}
+
+.examples {
+  white-space: pre;
+}
+
+::placeholder {
+  color: #ADD8E6;
+}
+
+textarea {
+ width: 40em;
+ height: 14em;
+}
+
+.btn {
+  border-radius: 0 10px;
+}
+
+.btnReset{
+ border-radius: 0 10px;
+ background-color: #FF4500; 
+}
+
+input {
+  border-radius: 10px 10px;
+}
+
+body {
+    margin: 14px;
+    font-size: 18px;
+    background-color: #F0FFF0;
+}
