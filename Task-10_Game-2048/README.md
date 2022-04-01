@@ -10,5 +10,5 @@
 ### Screenshot
 
 <p align="center">
-![avatar](./style/imgs/Game-2048-Screen.png)
+  <img src="./style/imgs/Game-2048-Screen.png">
 </p>
